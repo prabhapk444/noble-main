@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" type="image/x-icon"  href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  
+    <title>Noble College</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/noble.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+   
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <!-- <a href="#"><em>Noble</em> College</a> -->
+      <img src="assets/images/logo.png" height="78px" width="100px" alt="">
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li ><a href="#section2">About us</a>  
+          <!-- class="has-submenu" -->
+          <!-- <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            
+            
+          </ul> -->
+        </li>
+        <li><a href="#section4">Courses</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+        
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  style="margin-left: 110px;">
+  Application Form
+</button>
+        
+      </ul>
+    </nav>
+  </header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Please login </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="application.php" method="post">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">aadharNumber</label>
+            <input type="number" class="form-control" id="aadharNumber" id="aadhar" aria-describedby="emailHelp" onkeyup="validateAadhar(this)" required>
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="exampleInputPassword1" required>
+          </div>
+          <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/course-video.mp4" type="video/mp4" />
+      </video>
+      
+      <!-- <img autoplay muted loop id="bg-video" src="assets/images/giphy.gif" alt=""> -->
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Noble Trust</h6>
+              <h2><em>Noble</em> College</h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+              </div>
+              <div class="content-hide">
+                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section4">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Vision</h4>
+              </div>
+              <div class="content-hide">
+                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Mission</h4>
+              </div>
+              <div class="content-hide">
+                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why choose Noble College?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Best Education</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Attractive Infrastructure</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/block.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Best Education</h4>
+                    <p>An institution with excellent infrastructure, conductive and congenial atmosphere for quality learning, high standard education at an affordable cost and above all safe environment for girl students.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/bus.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Top Management</h4>
+                    <p>Noble College of Arts and Science for Women, Palavanatham, affiliated to Madurai Kamaraj University started its, pursuit of intellectual quest, amelioration and scholarly pursuit with a simple beginning in the year 2018.</p> 
+                    <p> The construction of college looks majestic with magnitude, well facilitated blocks and highly qualified dedicated and experienced faculty members.</p>
+                  </div>
+                </div>
+              </article>  
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/prayer.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Top Infrastructure</h4>
+                    <p>We transform the students into global professionals of 21st century. We equip the students with sustaining success in studies and with spoken English and help them to exhibit their hidden potential and power.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-heading">
+      <h2>Management</h2>
+    </div>
+    <div class="wrapper">
+      <div class="testimonial-container" id="testimonial-container"></div>
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Take <em>any course</em> as your Choice</h4>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Contact us today, <em>For more information</em> about our college and courses</h6>
+            </div>
+            <form id="contact" action="" method="get" autocomplete="off">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Get it now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Choose Your Course</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/images/Tamil.jpg" alt="Course #1">
+            <div class="down-content">
+              <h4>B.A (Tamil)</h4>
+              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/eng.jpg" alt="Course #2">
+            <div class="down-content">
+              <h4>B.A (English)</h4>
+              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/bcom.jpg" alt="Course #3">
+            <div class="down-content">
+              <h4>B.com</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/bcomca.jpg" alt="Course #4">
+            <div class="down-content">
+              <h4>B.com(CA)</h4>
+              <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/maths.jpg" alt="">
+            <div class="down-content">
+              <h4>B.sc.(Maths)</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/phy.png" alt="">
+            <div class="down-content">
+              <h4>B.sc.(Physics)</h4>
+              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/che.jpg" alt="">
+            <div class="down-content">
+              <h4>B.sc.(Chemistry)</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/cs.jpg" alt="">
+            <div class="down-content">
+              <h4>B.sc.(Computer Science)</h4>
+              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/bba.jpg" alt="">
+            <div class="down-content">
+              <h4>B.B.A</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/bca.jpg" alt="">
+            <div class="down-content">
+              <h4>B.C.A</h4>
+              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+              
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/history.jpg" alt="">
+            <div class="down-content">
+              <h4>B.A.(History)</h4>
+              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+
+                    
+          <form id="contact" action="#" method="post" autocomplete="off">
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.7140986636546!2d78.04243231744384!3d9.533549400000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b012ff29b525bab%3A0xbc64a63f2da57144!2sNoble%20College%20Of%20Arts%20%26%20Science%20for%20Women%20-%20Noble%20Group%20Of%20Institutions!5e0!3m2!1sen!2sin!4v1678991749118!5m2!1sen!2sin" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="social">
+    
+    <div class="social-menu">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2023 by Unijactechnologies  
+          
+           | Design: <a href="https://unijactech.com" rel="sponsored" target="_parent">Unijactech</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+       
+
+    // slide
+    
+    const testimonials = [
+  {
+    name: "Dr.A.S.A.JeraldGnanarathinam."+ "<br>" +"MSc,M.Phil(Che),M.Ed,M.Phil(Edu),Ph.D,M.B.A,D.Litt,D.Sc", 
+    job: "Chairman",
+    image: "assets/images/sir.jpg",
+    testimonial:
+      "Education is not the learning of facts, but training of the mind to think”You have met people who literally wander through life. They simply accept whateverbrings them. A few may succeed by accident, but most suffer through a life time offrustration and unhappiness. This can be avoided through education. Education will againbe a way of life transmission of consciousness from teacher to student and it will berather the transmission of a capacity to handle facts, to know where and how to find themand what to do with them to understand their limitations. Above all it will give the capacityto learn, to absorb, and to engage one’s whole being in the acquisition and the possessionof knowledge.Education at Noble College goes well beyond the acquisition of facts fromthe books or instructions in a lecture hall. We have always strived to enrich the lives ofevery member of this wonderful institution. Realizing this philosophy, we at Noble collegecommit to foster and save the essence of education, building character, appreciatingvalues and right attitudes, acquiring life skills, respecting fellow beings and theenvironment, accepting differences and building lasting friendship; all this by everexpanding the learning horizons and life experiences. I share the pride and joy of thefaculty members and students on the successful completion of the Endeavour. Let’s worktogether to make this world a better place for us.",
+  },
+  {
+    name: "Dr.N.R.VirginInigoM.Sc.,M.A.,M.A.,M.Ed.,M.B.A.,D.Litt(USA)“",
+    job: "Secretary",
+    image: "assets/images/mam.jpg",
+    testimonial:
+      "Literary is the fertilizer needed for development and democracy to take root and grow”Every human being is precious in the sight of God and to their own parents. Each onehave their own individuality, special skills and talents. Noble college provides anappropriate, all-encompassing education, which leads to all round personalitydevelopment of a person to face the challenges of life in all their future endeavors.Students at our Noble College are provided with genial tranquil and natural learningenvironment. We ensure that students entrusted to us grow to their full potential whileconstantly being groomed to pass out as woman competent to take responsibility in allwalks of life.I believe that right approach to motivate and get the best out of the studentsis based on the positive reinforcement of good work and good behavior with a philosophywhich centers on praise, encouragement, enthusiasm, fun and affection rather thancriticism, fear and punishment. Education is not accumulation of knowledge like anencyclopedia or the storage bank of a computer. Education should avoid beingaccumulative and be purely transformative. The benefits of education are manifold.Educating women result in improved productivity income and economic development aswell as a better quality of life. Noble college for women empowers women for developingfeminist perspectives in various disciplines. My dear students excellence is based onknowledge, training, careful study, confidence and competence. They are the factors thatgive you the courage to act. Let us leave the fear and March forward towards excellence",
+  },
+  {
+    name: "Dr. M. Meenakshisundaram M.Sc., M.Phil.,Ph.D.",
+    job: "Principal",
+    image: "assets/images/sir2.jpg",
+    testimonial:
+      "Education is the cornerstone of human civilization”As the adage goes, education occupies the prominent place in the evolution anddevelopment of any civilized society. Right from the days of Nalanda and Takshashila,India has been a country where knowledge wisdom are given pivotal importance by therulers.Taking cue from such historical institutions, today, the Noble College of Arts and Science,Palavanatham, Virudhunagar, has been spearheading the cause of higher education tothe weaker sections of the society i.e., the women folk. Situated in a dry and socially andeconomically backward region of Tamil Nadu, this College, since its inception, has beendoing yeomen service to the society by providing quality education to the learners whoare almost first generation graduates. Within a short span of time, this Institution hasalready created a niche for itself in the academic milieu of this part of the Country.Under the dynamic and visionary Management, the College administration under byPrincipal ship is delivering the goods to the stakeholders. I am glad that the Institution isgrowing in all spheres. And I assure that the College will be thriving for creating aknowledge society in the days to come."
+  }
+
+];
+//Current Slide
+let i = 0;
+//Total Slides
+let j = testimonials.length;
+let testimonialContainer = document.getElementById("testimonial-container");
+let nextBtn = document.getElementById("next");
+let prevBtn = document.getElementById("prev");
+nextBtn.addEventListener("click", () => {
+  i = (j + i + 1) % j;
+  displayTestimonial();
+});
+prevBtn.addEventListener("click", () => {
+  i = (j + i - 1) % j;
+  displayTestimonial();
+});
+let displayTestimonial = () => {
+  testimonialContainer.innerHTML = `
+    <img src=${testimonials[i].image}>
+    <h2>${testimonials[i].job}</h2>
+    <h3>${testimonials[i].name}</h3>
+    <p>${testimonials[i].testimonial}</p>
+  `;
+};
+window.onload = displayTestimonial;
+
+
+// pattern 
+
+
+function validateAadhar(input) {
+    var aadharNumber = input.value;
+    if (aadharNumber.length > 12) {
+      input.value = aadharNumber.slice(0, 12);
+     window.alert("Aadhar number should be exactly 12 digits.");
+    }
+  }
+
+
+
+
+
+  
+    </script>
+</body>
+</html>
